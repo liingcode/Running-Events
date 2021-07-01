@@ -1,12 +1,15 @@
 'use strict'
 document.write('this is script');
 
-let answer = prompt ('would you like to join our email list?');
+let answer = prompt('would you like to join our email list?');
 
 
 if (answer === 'yes') {
-    let emailAddress = prompt ('Enter your email address below');
-    
+    let emailAddress = prompt('Enter your email address below');
+    // sayHello(); 
+    let firstname = prompt('hello, what is your first name?');
+    let lastname = prompt('What is your lastname?');
+    console.log(firstname + ' ' + lastname);
 }
 
 
@@ -14,3 +17,13 @@ if (answer === 'yes') {
 // yes or no answer that may prompt them again based on the
 // first answer. 
 
+
+
+function sayHello() {
+    let firstname = prompt('hello, what is your first name?');
+    let lastname = prompt('What is your lastname?');
+    console.log(firstname + ' ' + lastname);
+document.write(firstname +' '+ lastname);
+
+
+}
